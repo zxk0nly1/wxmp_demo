@@ -1,0 +1,32 @@
+/*rpx相当于rem
+    小程序对弹性盒子支持非常好，建议使用
+
+*/
+.index-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index-container .logo{
+    width:392rpx;
+    height: 96rpx;
+    margin-top: 160rpx;
+
+}
+.index-container .username{
+    margin-top: 100rpx;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+.index-container .btn{
+    margin-top:300rpx;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-top: 1px solid #109d59;
+    border-radius: 5px;
+}
+.index-container text{
+    color: #109d59;
+    
+}
