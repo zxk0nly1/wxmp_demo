@@ -5,6 +5,7 @@
         <text class="author-name">{{authorName}}</text>
         <text class="const-text">发表于</text>
         <text class="date">{{authorDate}}</text>
+        <image bindtap="playerMusicTap" class="playmusic" src="{{isPlayer?'../../images/earphone.png':'../../images/eartag.png'}}"></image>
     </view>
     <text class="title">{{title}}</text>
     <view class="tool">

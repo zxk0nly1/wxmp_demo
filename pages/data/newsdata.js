@@ -9,7 +9,12 @@ var initData=[
         "articleminText":"岁月不老",
         "articleText":"岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城",
         "articleLikeComment":"12",
-        "articleLikeSC":"30"
+        "articleLikeSC":"30",
+        "music":{          
+            "url":"http://m8.music.126.net/20191119015339/8023ff288d981297fe6810b25392cbb1/ymusic/0608/5559/535c/1b8e6801d1b32d4cc573d60186dc9ba4.mp3",
+            "title":"野狼Disco",
+            "coverImg":""
+        }
     },
     {
         "newsid":1,
@@ -19,9 +24,65 @@ var initData=[
         "title":"执子之手，与子偕老",
         "articleImg":"../images/sub2.png",
         "articleminText":"执子之手",
-        "articleText":"执子之手，与子偕老执子之手，与子偕老执子之手，与子偕老执子之手，与子偕老执子之手，与子偕老执子之手，与子偕老",
+        "articleText":"有些事，猝不及防，不管你在不在乎；有些人，并非所想，不管你明不明白；有些路，必须得走，不管你愿不愿意。不怕事，不惹事，不避事，做好自己，用真心面对一切；少埋怨，少指责，少发火，学会沉静，用微笑考量一切；多体察，多包容，多思索，尽心尽力，虽缺憾但无悔。像蒲公英一样美丽，虽轻盈，但并不卑微，它有自己的生命，也有自己的世界！",
         "articleLikeComment":"15",
-        "articleLikeSC":"20"
+        "articleLikeSC":"20",
+        "music":{          
+            "url":"http://m7.music.126.net/20191119020134/c09517bb244712be96674d1c1f5a846f/ymusic/de9a/6885/e183/effb8f74546c98fd619d51f22e2bfaaf.mp3",
+            "title":"Hello",
+            "coverImg":""
+        }
+    },
+    {
+        "newsid":2,
+        "authorIcon":"../images/head3.png",
+        "authorName":"cxk",
+        "authorDate":"2019/7/26",
+        "title":"经典名句之生活",
+        "articleImg":"../images/sls.jpg",
+        "articleminText":"生活是什么？生活是柴米油盐的平淡；",
+        "articleText":"生活是什么？生活是柴米油盐的平淡；是行色匆匆早出晚归的奔波；生活是错的时间遇到对的人的遗憾；是爱的付出与回报；生活是看不同的风景，遇到不同的人；是行至水穷尽，坐看云起时的峰回路转；生活是灵魂经历伤痛后的微笑怒放；是挫折坎坷被晾晒后的坚强；生活是酸甜苦辣被岁月沉淀后的馨香；是经历风霜雪雨洗礼后的懂得；生活是走遍千山万水后，回眸一笑的洒脱。",
+        "articleLikeComment":"15",
+        "articleLikeSC":"20",
+        "music":{          
+            "url":"http://m7.music.126.net/20191119020215/a5a84a177abe26887c5be73e904c4587/ymusic/2941/63cc/71ea/a4f2711f0dfe38def68c76f00b47d648.mp3",
+            "title":"This my life",
+            "coverImg":""
+        }
+    },
+    {
+        "newsid":3,
+        "authorIcon":"../images/head4.png",
+        "authorName":"ccy",
+        "authorDate":"2019/7/26",
+        "title":"经典名句之人生",
+        "articleImg":"../images/sub2.png",
+        "articleminText":"尽管直白，却真诚，让人肃然起敬；尽管残忍，却真实，让人痛快淋漓；尽管失去，却真挚，让人无怨无悔。",
+        "articleText":"尽管直白，却真诚，让人肃然起敬；尽管残忍，却真实，让人痛快淋漓；尽管失去，却真挚，让人无怨无悔。笑对风雨，那是一种别样的风景；笑对人生，那是一种纵情的歌唱；笑着流泪，那是一种痛彻心扉的情怀。经历炙烤，才会浴火重生；经历冰冻，才会心无通透；经历让生命愈挫愈勇，傲然屹立！",
+        "articleLikeComment":"15",
+        "articleLikeSC":"20",
+        "music":{          
+            "url":"http://m7.music.126.net/20191119020312/c3c0ec4adb3046b2ec0c45538fe8d1c4/ymusic/515a/0559/045f/f0fad96e1223d23a8d98350118e6e500.mp3",
+            "title":"Blank Space",
+            "coverImg":""
+        }
+    },
+    {
+        "newsid":4,
+        "authorIcon":"../images/head5.png",
+        "authorName":"lxz",
+        "authorDate":"2019/7/26",
+        "title":"经典名句之过往",
+        "articleImg":"../images/sub1.png",
+        "articleminText":"回眸过往，谁曾在谁的青春里走过，留下了浅浅的笑魇",
+        "articleText":"回眸过往，谁曾在谁的青春里走过，留下了浅浅的笑魇；谁曾在谁的花季里停留，温暖了想念；谁曾在谁的故事里驻足，忘了归期。心与心的距离很远又很近，爱恨转身之间，聚散一念之间，那么如若遇见，别问是缘是劫，若爱请惜，若错过便护他安好，学会活在当下，相信真正属于你的东西，你永远都不会错过。",
+        "articleLikeComment":"15",
+        "articleLikeSC":"20",
+        "music":{          
+            "url":"http://m7.music.126.net/20191119020043/92816277e3a5b6c146dc000a5b422e0d/ymusic/0152/055a/5308/681ef6f50f20971ac5bddb07161fc6b5.mp3",
+            "title":"芒种",
+            "coverImg":""
+        }
     },
 ]
 //导出可以被外部访问

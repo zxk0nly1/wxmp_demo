@@ -75,3 +75,9 @@
     letter-spacing: 2px;
     font-size: 24rpx;
 }
+.playmusic{
+    width:60rpx;
+    height: 60rpx;
+    vertical-align: middle;
+    margin-left: 40rpx;
+}

@@ -2,7 +2,7 @@ var newsData=require("../../data/newsdata.js");
 
 Page({
   data:{
-
+    isPlayer:false
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -52,7 +52,7 @@ Page({
     var newCollect=newsCollect[this.data.newsid]
     //点击时候，若收藏则取消，若未收藏则收藏
     newCollect=!newCollect;
-
+    //同步存储到本地
     //更新到本地存储中
     newsCollect[this.data.newsid]=newCollect;
     wx.setStorageSync('newsCollect', newsCollect);
@@ -61,52 +61,66 @@ Page({
       collected:newsCollect[this.data.newsid]
     })
 
-    wx.showToast({
-      title:newsCollect[this.data.newsid]?"收藏成功":"取消收藏",
-      icon:'success',
-      duration:800,
-      mask:true
-    })
+      wx.showToast({
+        title:newsCollect[this.data.newsid]?"收藏成功":"取消收藏",
+        icon:'success',
+        duration:800,
+        mask:true
+      })
     
     },
 
-    /**
-     * 
-     *
-     onShowTap:function(event){
-      wx.showModal({
-        title:'提示',
-        content:'这是模态窗',
-        success:function(res){
-          if(res.confirm){
-            console.log('确定')
+  
+      onShowTap:function(event){
+    //   wx.showModal({
+    //     title:'提示',
+    //     content:'这是模态窗',
+    //     success:function(res){
+    //       if(res.confirm){
+    //         console.log('确定')
+    //       }
+    //     }
+    //页面上的分享功能
+        wx.showActionSheet({
+          itemList:['分享到微信','分享到微博','分享到QQ'],
+          success:function(res){
+            console.log(res.tapIndex)
+          },
+          fail:function(res){
+            console.log(res.errMsg)
           }
+        })
+      },
+      //页面上面的分享功能
+      onShareAppMessage:function(){
+        return{
+          title:newsData.initData[this.data.newsid].title,
+          path:'/pages/news/news-detail/news-detail'
         }
-     * 
-     *
-     * 
-     * 
-     */
-
-     
-
-
-//         wx.showActionSheet({
-//           itemList:['分享到微信','分享到微博','分享到QQ'],
-//           success:function(res){
-//             console.log(res.tapIndex)
-//           },
-//           fail:function(res){
-//             console.log(res.errMsg)
-//           }
-//         })
-// },
-//       onShareAppMessage:function(){
-//         return{
-//           title:'newsData.initData[options.newsid].title',
-//           path:''
-//         }
-//       }
-
-      
+      },
+      playerMusicTap:function(event){
+        //判断播放音乐的状态
+        var that=this;
+        var isPlayer=wx.getBackgroundAudioPlayerState({
+          success: function(res){
+            var status=res.status;
+            if(status!=1){
+              //没有在播放
+               wx.playBackgroundAudio({
+                  dataUrl: newsData.initData[that.data.newsid].music.url,
+                  title:newsData.initData[that.data.newsid].music.title,
+                  coverImgUrl:newsData.initData[that.data.newsid].music.coverImg
+                })
+                  that.setData({
+                    isPlayer:true
+                  })
+              }else{
+                wx.pauseBackgroundAudio();
+                  that.setData({
+                    isPlayer:false
+                  })
+              }
+          }
+        })
+      }     
 })

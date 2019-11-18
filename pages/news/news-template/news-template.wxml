@@ -7,7 +7,7 @@
     </view>
     <text class="title">{{title}}</text>
     <image src="{{articleImg}}" class="article-img"></image>
-    <text class="article-text">{{articleText}}</text>
+    <text class="article-text">{{articleminText}}</text>
     <view class="article-like">
       <image class="article-like-icon" src="../images/sc.png"></image>
       <text class="article-like-text">{{articleLikeSC}}</text>
