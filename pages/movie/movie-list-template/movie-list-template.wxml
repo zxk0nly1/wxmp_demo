@@ -1,15 +1,22 @@
+<import src="../movie-template/movie-template.wxml"/>
 <template name="movieListTemplate">
     <view  class="movie-list-container">
         <view class="inner-container">
             <view class="movie-head">
-                <text class="slogan">正在热映</text>
-                <view class="more">
+                <text class="slogan">{{categoryName}}</text>
+                <view class="more" catchtap="onMoreTap">
                     <text class="more-text">更多</text>
                     <image src="../images/arrow-right.png" class="more-img"></image>
                 </view>
             </view>
             <view class="movies-container">
                 <!--加载3个movie-->
+               --<template is="movieTemplate" />
+                <template is="movieTemplate" />
+                <template is="movieTemplate" />
+                <!--<block wx:for="{{movies}}" wx:for-item="item" wx:key="key">
+                    <template is="movieTemplate" data="{{...item}}" />
+                </block>-->
             </view>
         </view>
     </view>

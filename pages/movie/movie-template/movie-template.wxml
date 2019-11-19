@@ -1,8 +1,8 @@
 <import src="../star-template/star-template.wxml"/>
 <template name="movieTemplate">
     <view class="movie-container" >
-        <image class="movie-img" src="https://img1.doubanio.com//view//celebrity//s_ratio_celebrity//public//p1558931683.7.webp"></image>
-        <text class="movie-title">美女与野兽</text>
-        <template is="starTemplate"/>
+        <image class="movie-img" src="http://img1.doubanio.com//view//celebrity//s_ratio_celebrity//public//p1549784422.23.webp"></image>
+            <text class="movie-title"></text>
+        <template is="starTemplate" data="{{average}}"/>
     </view>
 </template>

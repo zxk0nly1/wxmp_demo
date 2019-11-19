@@ -1,5 +1,5 @@
 App({
     globalUrl:{
-        "doubanUrl":"https://douban.uieee.com"
+        "doubanUrl":"https://douban-api.uieee.com"
     }
 })

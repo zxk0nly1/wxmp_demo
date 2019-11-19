@@ -3,7 +3,6 @@
          "pages/index/index",
         "pages/news/news", 
         "pages/news/news-detail/news-detail",
-        
         "pages/movie/movie"
     ],
     "window": {
